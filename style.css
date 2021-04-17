@@ -1,0 +1,19 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.words {
+    margin-top: 50%;
+}
+
+.hide-word {
+    display: none;
+}
