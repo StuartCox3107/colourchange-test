@@ -7,19 +7,30 @@
         <title>Stuart Cox</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="words" id="body"> 
-        <button id="red-btn">Red</button>
-        <button id="green-btn">Green</button>   
-        <button id="yellow-btn">Yellow</button>
-        <button id="white-btn">White</button>
+        <button class="btn btn-secondary" id="red-btn">Red</button>
+        <button class="btn btn-secondary" id="green-btn">Green</button>   
+        <button class="btn btn-secondary" id="yellow-btn">Yellow</button>
+        <button class="btn btn-secondary" id="white-btn">White</button>
         <div class="words">
-            <h1 id="white-word">White</h1>
-            <h1 id="red-word" class="hide-word">Red</h1>
-            <h1 id="green-word" class="hide-word">Green</h1>
-            <h1 id="yellow-word" class="hide-word">Yellow</h1>
-        </div>   
+            <h1 class="badge bg-secondary" id="white-word">White</h1>
+            <h1 id="red-word" class="hide-word badge bg-secondary">Red</h1>
+            <h1 id="green-word" class="hide-word badge bg-secondary">Green</h1>
+            <h1 id="yellow-word" class="hide-word badge bg-secondary">Yellow</h1>
+        </div>
+        <div>
+            <div class="card" id="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" id="close" class="btn btn-primary">Close</button>
+                </div>
+              </div>
+        </div>
+        <button type="button" id="show" class="btn btn-danger show-card">Show Card</button>   
         <script src="app.js" async defer></script>
     </body>
 </html>

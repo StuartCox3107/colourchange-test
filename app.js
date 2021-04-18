@@ -7,6 +7,9 @@ const redWord = document.getElementById("red-word");
 const greenWord = document.getElementById("green-word");
 const yellowWord = document.getElementById("yellow-word");
 const body = document.getElementById("body");
+const card = document.getElementById("card");
+const closeCard = document.getElementById("close");
+const showBtn = document.getElementById("show");
 
 redBtn.addEventListener("click", function(){
     body.classList.remove("yellow", "white", "green");
@@ -44,3 +47,15 @@ whiteBtn.addEventListener("click", function(){
     yellowWord.classList.add("hide-word");
     redWord.classList.add("hide-word");
 });
+
+closeCard.addEventListener("click", function() {
+    card.classList.add("hide-card");
+    showBtn.classList.remove("show-card");
+});
+
+showBtn.addEventListener("click", function(){
+    card.classList.remove("hide-card");
+    showBtn.classList.add("show-card");
+})
+
+

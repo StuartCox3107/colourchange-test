@@ -17,3 +17,11 @@
 .hide-word {
     display: none;
 }
+
+.hide-card {
+    display: none;
+}
+
+.show-card {
+    display: none;
+}
